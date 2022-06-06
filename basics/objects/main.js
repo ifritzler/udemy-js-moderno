@@ -38,3 +38,6 @@ product.color = 'blue'
 // Tambien podriamos hacer uso de la brackets notation
 // eslint-disable-next-line dot-notation
 product['color'] = 'green'
+
+// Podemos eliminar propiedades de nuestro objeto
+delete product.color

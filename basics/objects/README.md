@@ -58,3 +58,17 @@ Ejemplos con brackets notation:
 console.log(product['available'])
 console.log(product['price'])
 ```
+
+### Asignación de valor a las properties
+Se pueden asignar nuevos valores o nuevas properties con el operador '=' usando dot notation y brackets notation.
+``` js
+product.color = 'blue'
+product['color'] = 'green'
+```
+
+### Eliminación de las properties
+
+Usando la palabra reservada 'delete' podremos eliminar una propiedad que nos llegue en un objeto
+``` js 
+delete product.color 
+```
