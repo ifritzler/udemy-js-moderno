@@ -1,9 +1,9 @@
 # Objects
 
-Representación de un __object literal__:
+### Representación de un __object literal__:
 
 ``` js
-let product = {
+const product = {
     name: 'Veggie Burguers x4 320g',
     description: 'Burguer made with vegetables and love.',
     price: 500,
@@ -18,13 +18,13 @@ let product = {
 
 Ejemplo de __object literal__ con mas properties:
 ``` js
-let product = {
+const product = {
     name: 'Veggie Burguers x4 320g',
     description: 'Burguer made with vegetables and love.',
     price: 499.90,
     available: true,
-    variant: 'Onion'
-    otherVariants: ['cheese, chicken, beetroot, lentils, beans']
+    variant: 'Onion',
+    otherVariants: ['cheese, chicken, beetroot, lentils, beans'],
     company: {
         name: 'NOT Burguer S.A',
         address: {
@@ -35,4 +35,26 @@ let product = {
         }
     }
 }
+```
+
+### Acceso a las properties
+
+- Estas pueden ser accedidas mediante dos notaciones:
+  - dot notation
+  - brackets notation [ ]
+
+Ejemplos con dot notation:
+
+``` js
+console.log(product.available)
+console.log(product.company)
+console.log(product.price)
+console.log(product.otherVariants)
+```
+
+Ejemplos con brackets notation:
+
+``` js
+console.log(product['available'])
+console.log(product['price'])
 ```
