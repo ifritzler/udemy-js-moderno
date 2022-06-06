@@ -65,10 +65,14 @@ const {
   variant,
   company,
   company: {
-    country
+    address: {
+      country
+    }
   },
   company: {
-    state
+    address: {
+      state
+    }
   }
 } = product
 console.log(available)

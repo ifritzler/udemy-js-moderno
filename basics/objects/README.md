@@ -88,7 +88,7 @@ const { name, price, description, company } = product
 ### Destructuring con objetos anidados
 
 ``` js
-const { available, variant, company, company: { country }, company: { state } } = product
+const { available, variant, company, company: { address: { country } }, company: { address: { state } } } = product
 console.log(available)
 console.log(variant)
 console.log(company)
@@ -103,10 +103,14 @@ const {
   variant,
   company,
   company: {
-    country
+    address: {
+      country
+    }
   },
   company: {
-    state
+    address: {
+      state
+    }
   }
 } = product
 console.log(available)
