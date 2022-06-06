@@ -84,3 +84,35 @@ const { name, price, description, company } = product
 ```
 - Este ultimo tiene como particularidad que crea la variable y asigna el valor todo al mismo tiempo
 - En caso de que el nombre de la variable no exista como key en el objecto tomara de valor 'undefined' ya que esta misma no esta definida en el objeto.
+
+### Destructuring con objetos anidados
+
+``` js
+const { available, variant, company, company: { country }, company: { state } } = product
+console.log(available)
+console.log(variant)
+console.log(company)
+console.log(country)
+console.log(state)
+```
+
+Otra forma de verlo identado:
+``` js
+const {
+  available,
+  variant,
+  company,
+  company: {
+    country
+  },
+  company: {
+    state
+  }
+} = product
+console.log(available)
+console.log(variant)
+console.log(company)
+console.log(country)
+console.log(state)
+```
+

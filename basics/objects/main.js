@@ -53,8 +53,26 @@ console.log(pruebaNombre)
   esto nos permite poder simplificar la sintaxis y crear las variables al mismo tiempo
   que se extraen del objeto.
 */
-const { name, price, description, company } = product
+const { name, price, description } = product
 console.log(name)
 console.log(price)
 console.log(description)
+
+// Destructuring anidado
+
+const {
+  available,
+  variant,
+  company,
+  company: {
+    country
+  },
+  company: {
+    state
+  }
+} = product
+console.log(available)
+console.log(variant)
 console.log(company)
+console.log(country)
+console.log(state)
