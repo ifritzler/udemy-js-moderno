@@ -41,3 +41,20 @@ product['color'] = 'green'
 
 // Podemos eliminar propiedades de nuestro objeto
 delete product.color
+
+// Podemos extraer data en variables de dos maneras.
+// La manera mas antigua mediante dot notation.
+
+const pruebaNombre = product.name
+console.log(pruebaNombre)
+
+/*
+  Podemos hacer uso tambien de algo llamado 'destructuring',
+  esto nos permite poder simplificar la sintaxis y crear las variables al mismo tiempo
+  que se extraen del objeto.
+*/
+const { name, price, description, company } = product
+console.log(name)
+console.log(price)
+console.log(description)
+console.log(company)

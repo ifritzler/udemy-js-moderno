@@ -72,3 +72,15 @@ Usando la palabra reservada 'delete' podremos eliminar una propiedad que nos lle
 ``` js 
 delete product.color 
 ```
+
+### Extrayendo data del __object literal__:
+``` js
+const name = product.name
+```
+
+Con __destructuring__:
+``` js
+const { name, price, description, company } = product
+```
+- Este ultimo tiene como particularidad que crea la variable y asigna el valor todo al mismo tiempo
+- En caso de que el nombre de la variable no exista como key en el objecto tomara de valor 'undefined' ya que esta misma no esta definida en el objeto.
