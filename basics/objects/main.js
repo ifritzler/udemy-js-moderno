@@ -1,3 +1,5 @@
+'use strict'
+
 const product = {
   name: 'Veggie Burguers x4 320g',
   description: 'Burguer made with vegetables and love.',
@@ -80,3 +82,12 @@ console.log(variant)
 console.log(company)
 console.log(country)
 console.log(state)
+
+// Prevenir la mutabilidad
+Object.freeze(product)
+console.log(Object.isFrozen(product))
+
+// Sellar el objeto para que solo puedan modificarse los valores de las llaves existentes
+
+Object.seal(product)
+console.log(Object.isSealed(product))

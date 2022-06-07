@@ -120,3 +120,40 @@ console.log(country)
 console.log(state)
 ```
 
+### Prevenir mutabilidad de los __object literal__
+
+Para esto es necesario e indispensable activar el modo estricto en js.
+
+En la primera linea de nuestro codigo colocaremos lo siguiente:
+``` js
+'use strict'
+```
+Luego de tener listo nuestro objeto podemos freezarlo de la siguiente manera:
+``` js
+Object.freeze(product)
+/* 
+  Esta siguiente linea nos devolvera true o false
+  dependiendo si el objeto se freezo o no.
+  Nos dara un comportamiento mucho mas real a una variable 
+  de tipo const
+*/ 
+console.log(Object.isFrozen(product))
+```
+
+### Permitir solo modificacion de values en los __object literal__
+
+Para esto es necesario e indispensable activar el modo estricto en js.
+
+En la primera linea de nuestro codigo colocaremos lo siguiente:
+``` js
+'use strict'
+```
+Luego de tener listo nuestro objeto podemos sellarlo de la siguiente manera:
+``` js
+Object.seal(product)
+/* 
+  Esta siguiente linea nos devolvera true o false
+  dependiendo si el objeto se selló o no.
+*/ 
+console.log(Object.isSealed(product))
+```
