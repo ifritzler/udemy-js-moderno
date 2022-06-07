@@ -178,6 +178,18 @@ const category = {
 const spreadProduct = { ...product, ...category }
 ```
 
+### Palabra reservada this en objetos
+This es una forma ded referirse a un objeto en si mismo.
+Lo que pasará es que si un objeto tiene multiple información y puede que existan variables por fuera del mismo que se llamen exactamente igual que propiedades del objeto en cuestion.
 
+Con esta palabra reservada vamos a poder referenciar a la propiedad del propio objeto y asi evitar confusiones no solo en la lectura sino tambien de ejecucion de nuestra aplicacion.
 
-
+```js
+const product = {
+  ...,
+  ...,
+  showInfo: function () {
+    console.log(`${this.name} tiene un precio de $${this.price}`)
+  }
+}
+```

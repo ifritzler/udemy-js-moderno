@@ -15,6 +15,9 @@ const product = {
       city: 'Mar del Plata',
       postalCode: 7600
     }
+  },
+  showInfo: function () {
+    console.log(`${this.name} tiene un precio de $${this.price}`)
   }
 }
 
@@ -105,3 +108,6 @@ console.log(fullProduct)
 // Con spread o rest operator
 const spreadProduct = { ...product, ...category }
 console.log(spreadProduct)
+
+// Palabra reservada this
+product.showInfo()
