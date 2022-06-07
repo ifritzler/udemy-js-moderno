@@ -12,5 +12,6 @@ $ npm install
 ```
 ## Sections
 - __Basics__
-  - [Objects](./basics/objects/README.md)    
+  - [Objects literal](./basics/objects_literal/README.md)
+  - [Objects constructor](./basics/objects_constructor/README.md)   
 
