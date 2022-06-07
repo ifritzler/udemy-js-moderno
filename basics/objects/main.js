@@ -84,10 +84,24 @@ console.log(country)
 console.log(state)
 
 // Prevenir la mutabilidad
-Object.freeze(product)
+// Object.freeze(product)
 console.log(Object.isFrozen(product))
 
 // Sellar el objeto para que solo puedan modificarse los valores de las llaves existentes
 
-Object.seal(product)
+// Object.seal(product)
 console.log(Object.isSealed(product))
+
+/**
+ * Añadir un objeto a otro objeto
+ */
+const category = {
+  category: 'Food'
+}
+
+const fullProduct = Object.assign(product, category)
+console.log(fullProduct)
+
+// Con spread o rest operator
+const spreadProduct = { ...product, ...category }
+console.log(spreadProduct)

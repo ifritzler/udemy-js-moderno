@@ -157,3 +157,27 @@ Object.seal(product)
 */ 
 console.log(Object.isSealed(product))
 ```
+
+### Asignar un objeto a otro objeto
+
+- Forma tradicional
+``` js
+const category = {
+  category: 'Food'
+}
+
+const fullProduct = Object.assign(product, category)
+
+```
+- Con spread o rest operator, este nuevo operador lo que realmente hace es generar una copia del objeto en tiempo de ejecución.
+``` js
+// Con spread operator
+const category = {
+  category: 'Food'
+}
+const spreadProduct = { ...product, ...category }
+```
+
+
+
+
